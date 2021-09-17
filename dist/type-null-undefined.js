@@ -1,15 +1,15 @@
 //Null
 //Explicita
-var nullVariable;
+let nullVariable;
 nullVariable = null;
-var otherVariable = null;
+let otherVariable = null;
 otherVariable = 'text';
 console.log("null Variable", nullVariable);
 console.log("other Variable", otherVariable);
 //Undefined
-var undefinedVariable = undefined;
+let undefinedVariable = undefined;
 //undefinedVariable = true //Error
 //Null y undefined como subtipos
-var albumName;
+let albumName;
 albumName = null;
 albumName = undefined;

@@ -34,7 +34,7 @@ const album = new Album(1, "Personal pictures");
 const picture = new Picture(1, "Dogs photo", PhotoOrientation.Square);
 album.addPicture(picture);
 console.log("Album: ", album);
-//** Accediendo a los miembros publicos */
-picture.id = 100; //public
-picture.title = "Another title"; //public
+//** Accediendo a los miembros privados */
+// picture.id = 100; //Private -> Error
+// picture.title = "Another title"; //Private -> Error
 console.log("Album public: ", album);

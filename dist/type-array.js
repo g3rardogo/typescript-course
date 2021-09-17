@@ -1,9 +1,9 @@
 // Array
 //Corchetes []
-var users;
+let users;
 users = ["Gerardo", "Alejandro"];
 //Array<Tipo>
-var pictureTitles;
+let pictureTitles;
 pictureTitles = ["Favorite Sunset", "Vacation time", "Landscape"];
 //Accediendo a los valores en un array
 console.log("first user: ", users[0]);

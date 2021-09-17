@@ -12,7 +12,7 @@ var PhotoOrientation;
     PhotoOrientation[PhotoOrientation["Portrait"] = 1] = "Portrait";
     PhotoOrientation[PhotoOrientation["Square"] = 2] = "Square";
 })(PhotoOrientation || (PhotoOrientation = {}));
-var landscape = PhotoOrientation.Landscape;
+const landscape = PhotoOrientation.Landscape;
 console.log("Landscape: ", landscape);
 //Ver estado o cadena
 console.log("Landscape: ", PhotoOrientation[0]);
@@ -31,5 +31,5 @@ var Country;
     Country["Mexico"] = "mex";
     Country["EEUU"] = "usa";
 })(Country || (Country = {}));
-var mexico = Country.Mexico;
+const mexico = Country.Mexico;
 console.log("Country: ", mexico);

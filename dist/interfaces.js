@@ -8,9 +8,11 @@ var PhotoOrientation;
     PhotoOrientation[PhotoOrientation["Panorama"] = 3] = "Panorama";
 })(PhotoOrientation || (PhotoOrientation = {}));
 function showPicture(picture) {
-    console.log("[title: " + picture.title + ",\n        date: " + picture.date + ",\n        orientation: " + picture.orientation + "]");
+    console.log(`[title: ${picture.title},
+        date: ${picture.date},
+        orientation: ${picture.orientation}]`);
 }
-var myPicture = {
+let myPicture = {
     title: "Test title",
     date: "today",
     orientation: PhotoOrientation.Landscape,
@@ -22,7 +24,7 @@ showPicture({
     orientation: PhotoOrientation.Portrait,
 });
 function generatePicture(config) {
-    var picture = { title: "Default", date: "2020-03" };
+    const picture = { title: "Default", date: "2020-03" };
     if (config.title) {
         picture.title = config.title;
     }
@@ -31,11 +33,11 @@ function generatePicture(config) {
     }
     return picture;
 }
-var pictureGenerated = generatePicture({});
+let pictureGenerated = generatePicture({});
 console.log("picture: ", pictureGenerated);
-var picture = generatePicture({ title: "Travel pic" });
+let picture = generatePicture({ title: "Travel pic" });
 console.log("picture2: ", picture);
-var user;
+let user;
 user = { id: 10, username: "ME", isPro: true };
 // user.id = 20 //Error
 console.log("User readonly: ", user);

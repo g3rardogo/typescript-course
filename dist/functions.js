@@ -15,12 +15,12 @@ function createPicture3(title, date, size) {
 }
 createPicture3("Sunset", "10/09/2001");
 /** Flat array functions (disponible a partir de ES6) */
-var createPic = function (title, date, size) {
+let createPic = (title, date, size) => {
     return {
-        title: title,
-        date: date,
-        size: size,
+        title,
+        date,
+        size,
     };
 };
-var picture = createPic("Summer", "today");
+const picture = createPic("Summer", "today");
 console.log("Picture: ", picture);

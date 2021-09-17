@@ -1,5 +1,5 @@
 //Object
-var user = {};
+let user = {};
 user = {
     id: 1,
     userName: "Gerardo",
@@ -11,11 +11,11 @@ console.log("user: ", user);
 //console.log("userName: ", user.userName); //Error
 /* Object vs object (Clase JS vs Tipo TS)*/
 //TypeScript define por defecto a esta variable como una instancia de la clase Object
-var myObj = {
+const myObj = {
     id: 1,
     userName: "Gerardo",
     isPro: true,
 };
-var instance = myObj instanceof Object;
+const instance = myObj instanceof Object;
 console.log("Is instance: ", instance); //true
 console.log("user.userName", myObj.userName);

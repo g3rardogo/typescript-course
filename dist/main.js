@@ -1,20 +1,24 @@
 console.log("Hello from main");
 //Tipo: Number
 //Explicito
-var phone;
+let phone;
 phone = 54234567;
 //Inferido
-var phoneNumber = 524654;
+let phoneNumber = 524654;
 //Valores disponibles a partir de es6 o ECMASCRIPT2015
-var hexadecimal = 0xf00d;
-var binario = 10;
-var octal = 484;
+let hexadecimal = 0xf00d;
+let binario = 0b1010;
+let octal = 0o744;
 //Tipo: Boolean
-var isPro;
+let isPro;
 isPro = true;
 //Tipo: String
-var username = 'Gerardo Ramirez';
+let username = 'Gerardo Ramirez';
 //Template String
 // Uso de back-tick
-var userInfo = "\n    User Info:\n    username: " + username + "\n    firstName: " + (username + 'es usuario') + "\n";
+let userInfo = `
+    User Info:
+    username: ${username}
+    firstName: ${username + 'es usuario'}
+`;
 console.log('userInfo', userInfo);
